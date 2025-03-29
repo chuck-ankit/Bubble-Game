@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0fdfa; /* Teal 50 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#panel {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 80vh;
+    background-color: #ccfbf1; /* Teal 100 */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#ptop {
+    width: 100%;
+    min-height: 100px;
+    background-color: #0d9488; /* Teal 600 */
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.elem span {
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 600;
+}
+
+.box {
+    color: rgb(18, 119, 57);
+    background-color: #fff;
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    min-width: 60px;
+    text-align: center;
+}
+
+#pbtm {
+    width: 100%;
+    flex: 1;
+    background-color: #e0f2f1; /* Slightly lighter teal */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cntrls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.control-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 100px;
+    max-width: 150px;
+    text-align: center;
+    background-color: #14b8a6; /* Teal 500 */
+    color: white;
+}
+
+#start {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#stop {
+    background-color: #f44336;
+    color: white;
+}
+
+#reset {
+    background-color: #2196F3;
+    color: white;
+}
+
+.control-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    background-color: #0d9488; /* Teal 600 */
+}
+
+.control-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.control-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.3); /* Teal 500 */
+}
+
+#game {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccfbf1; /* Teal 100 */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    gap: 10px;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(40px, 6vw, 60px);
+    height: clamp(40px, 6vw, 60px);
+    background-color: #2dd4bf; /* Teal 400 */
+    color: #fff;
+    border-radius: 50%;
+    font-size: clamp(16px, 2.5vw, 24px);
+    font-weight: 600;
+}
+
+.bubble:hover {
+    background-color: #14b8a6; /* Teal 500 */
+    cursor: pointer;
+}
+
+.bubble:active {
+    background-color: #0d9488; /* Teal 600 */
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#game-title {
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 700;
+    color: #0f766e; /* Teal 700 */
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#game-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%; /* Make the logo round */
+    object-fit: cover; /* Ensure the image fits within the circle */
+}
